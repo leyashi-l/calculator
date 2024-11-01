@@ -1,0 +1,62 @@
+body {
+  background: black;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nums {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nums li:hover {
+  filter: brightness(130%);
+  cursor: pointer;
+}
+
+.nums li:not(:empty) {
+  list-style: none;
+  background-color: rgb(42 42 44);
+  padding: 12px;
+  margin: 15px;
+  border-radius: 20px;
+}
+
+.nums li:nth-child(5n + 4) {
+  background-color: rgb(92 92 94);
+}
+
+.nums li:nth-child(5n) {
+  background: rgb(255 159 10);
+}
+
+.nums li:nth-last-child(2) {
+  background-color: rgb(255 159 10);
+}
+
+.calculate {
+  display: grid;
+  justify-content: end;
+  padding: 20px;
+  margin: 15px;
+  text-align: right;
+}
+
+.request {
+  color: grey;
+  font-size: 20px;
+}
+
+.result {
+  color: white;
+  font-size: 30px;
+}
+
+
